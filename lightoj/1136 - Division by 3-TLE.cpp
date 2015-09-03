@@ -1,13 +1,15 @@
 #include<iostream>
+#include<cstdio>
 using namespace std;
 int main()
 {
     int t, caseCounter = 1;
-    cin>>t;
+    scanf("%d", &t);
     while(t)
     {
         long long int a, b;
-        cin>>a>>b;
+        scanf("%lld", &a);
+        scanf("%lld", &b);
         long long int counter = 0;
         long long int sum = 0;
         sum = a * (a-1) /2;
@@ -21,7 +23,7 @@ int main()
             }
             sum = sum % 3;
         }
-        cout<<"Case "<< caseCounter <<": "<<counter<<endl;
+        printf("Case %d: %d\n", caseCounter, counter);
         t--;
         caseCounter++;
     }
